@@ -40,7 +40,7 @@ def start_save_img(imgurl_list):
 
 def main():
     start_url = 'https://www.doutula.com/article/list/?page={}'
-    for i in range(1,7):
+    for i in range(1,500):
         print(i)
         start_html = get_html(start_url.format(i))
         html = get_img_html(start_html)
